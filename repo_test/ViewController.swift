@@ -10,9 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var changingText: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    @IBAction func changeText(sender: AnyObject) {
+        changingText.text = "Text Changed!"
+        changingText.textColor = UIColor.greenColor()
     }
 
     override func didReceiveMemoryWarning() {
