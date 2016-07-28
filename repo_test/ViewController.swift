@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     }
     @IBAction func changeText(sender: AnyObject) {
         changingText.text = "Text Changed!"
-        changingText.textColor = UIColor.greenColor()
+        changingText.textColor = UIColor.blueColor()
     }
 
     override func didReceiveMemoryWarning() {
